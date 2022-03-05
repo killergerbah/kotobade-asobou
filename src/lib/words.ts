@@ -75,7 +75,7 @@ export const localeAwareUpperCase = (text: string) => {
 
 export const getWordOfDay = () => {
   // January 23, 2022 Game Epoch
-  const epochMs = new Date('January 23, 2022 00:00:00').valueOf()
+  const epochMs = new Date('January 23, 2022 00:00:00 GMT+0900').valueOf()
   const now = Date.now()
   const msInDay = 86400000
   const index = Math.floor((now - epochMs) / msInDay)
